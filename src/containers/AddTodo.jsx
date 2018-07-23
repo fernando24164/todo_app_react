@@ -1,9 +1,9 @@
-import {Component} from "react"
+import React from "react"
 import {connect} from 'react-redux'
 import {addTodo} from "../actions/todos.js"
 import {bindActionCreators} from "redux"
 
-class AddTodo extends Component{
+class AddTodo extends React.Component{
     constructor (props){
         super(props);
         this.onSubmit = this.onSubmit.bind(this)
