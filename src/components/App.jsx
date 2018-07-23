@@ -1,5 +1,6 @@
 import React from "react"
 import {Container, Alert, Row, Col, InputGroup, Input, Button} from "reactstrap"
+import AppTodo from "../containers/AddTodo"
 
 class App extends React.Component{
     render(){
@@ -11,10 +12,9 @@ class App extends React.Component{
                     </Col>
                 </Row>
                 <Row>
-                    <InputGroup>
-                        <Input placeholder="Add Todo"/>
-                        <Button color="success">Add Todo</Button>
-                    </InputGroup>
+                    <Col xs="12" md="12" lg="12">
+                        <AppTodo />
+                    </Col>
                 </Row>
             </Container>
         )

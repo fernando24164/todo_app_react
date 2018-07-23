@@ -9,6 +9,7 @@ module.exports = {
         filename: '[hash].[name].js',
         path: path.resolve(__dirname, 'public')
     },
+    mode: "development",
     module: {
         rules: [
             {
@@ -28,6 +29,9 @@ module.exports = {
                 ]
             }
         ]
+    },
+    resolve: {
+        extensions: ['.js', '.jsx', '*']
     },
     plugins: [
         new CleanWebpackPlugin([path.resolve(__dirname, 'public/*.js')], { allowExternal: true}),
