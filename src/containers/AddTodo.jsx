@@ -1,4 +1,4 @@
-import React, {Component, createRef} from "react"
+import {Component} from "react"
 import {connect} from 'react-redux'
 import {addTodo} from "../actions/todos.js"
 import {bindActionCreators} from "redux"
@@ -6,7 +6,6 @@ import {bindActionCreators} from "redux"
 class AddTodo extends Component{
     constructor (props){
         super(props);
-        // this.textInput = createRef();
         this.onSubmit = this.onSubmit.bind(this)
     }
 
@@ -33,7 +32,6 @@ class AddTodo extends Component{
         return (
            <div>
                <form onSubmit={this.onSubmit}>
-                {/* <input placeholder="Add Todo" /> */}
                     <input placeholder="Add Todo" ref={(e) => this.textInput = e} />
                </form>
                <div>
