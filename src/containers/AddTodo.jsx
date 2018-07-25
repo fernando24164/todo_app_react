@@ -42,13 +42,13 @@ class AddTodo extends React.Component{
     }
 }
 
-function mapStateToProps(state) {
+const mapStateToProps = (state) => {
     return {
         todos: state
     }
 }
 
-function mapDispatchToProps(dispatch) {
+const mapDispatchToProps = (dispatch) => {
     return bindActionCreators({
         addTodo: addTodo
     }, dispatch)
